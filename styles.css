@@ -1,0 +1,117 @@
+/* CSS Reset */
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+/* Carousel Styles */
+header {
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+}
+
+header p {
+  font-size: 24px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.carousel {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.carousel-list {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.carousel-item img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-arrow {
+  z-index: 2;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.carousel-arrow img {
+  height: 40px;
+}
+
+.carousel-arrow.prev {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-arrow.next {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.circle-btn {
+  padding: 0px;
+  margin-right: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: lightgrey;
+}
+
+.carousel-arrow:hover img,
+.carousel-arrow:focus img,
+.circle-btn:hover,
+.circle-btn:focus {
+  scale: 1.25;
+}
+
+/* Current Button */
+.circle-btn.current {
+  background-color: grey;
+}
+
+/* ARIA Hidden */
+.carousel-item[aria-hidden="true"] {
+  display: none;
+}
+
+.carousel-item[aria-hidden="false"] {
+  display: block;
+}
