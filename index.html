@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Dynamic UI - Carousel</title>
+</head>
+<body>
+  <header>
+    <p>Random Company Name</p>
+  </header>
+  <h1>Dynamic UI - Carousel</h1>
+  <section aria-label="Carousel">
+    <div class="carousel">
+      <button class="carousel-arrow prev"><img src="./chevron-left.svg" alt="Left Arrow"></button>
+      <ul class="carousel-list">
+        <li class="carousel-item current" aria-hidden="false"><img src="../../chicken-assets/hawaii-chicken.jpg" alt="Hawaii Chicken"></li>
+        <li class="carousel-item" aria-hidden="true"><img src="../../chicken-assets/orpington-chicken.jpg" alt="Orpington Chicken"></li>
+        <li class="carousel-item" aria-hidden="true"><img src="../../chicken-assets/rhode-island-red-chicken.jpg" alt="Rhode Island Red Chicken"></li>
+        <li class="carousel-item" aria-hidden="true"><img src="../../chicken-assets/silkie-chicken.jpg" alt="Silkie Chicken"></li>
+      </ul>
+      <button class="carousel-arrow next"><img src="./chevron-right.svg" alt="Right Arrow"></button>
+      <div class="circle-container">
+        <button class="circle-btn current"></button>
+        <button class="circle-btn"></button>
+        <button class="circle-btn"></button>
+        <button class="circle-btn"></button>
+      </div>
+    </div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>
